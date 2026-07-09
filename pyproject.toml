@@ -1,0 +1,29 @@
+[project]
+name = "send-ev-project"
+version = "0.1.0"
+description = ""
+authors = [{name = "Nicholas Maina", email = "y5m84@students.keele.ac.uk"}]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "numba (>=0.62.1,<0.63.0)",
+    "numpy (<2.4)",
+    "acnportal (>=0.3.3,<0.4.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "scikit-learn (>=1.9.0,<2.0.0)",
+    "xgboost (>=3.3.0,<4.0.0)",
+    "lightgbm (>=4.6.0,<5.0.0)",
+    "matplotlib (>=3.11.0,<4.0.0)",
+    "plotly (>=6.8.0,<7.0.0)",
+    "holidays (>=0.100,<0.101)",
+    "import-ipynb (>=0.2,<0.3)",
+    "jupyterlab (>=4.6.1,<5.0.0)",
+    "shap (>=0.52.0,<0.53.0)",
+    "dice-ml (>=0.12,<0.13)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false

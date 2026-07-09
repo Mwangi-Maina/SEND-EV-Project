@@ -1,0 +1,9 @@
+jupyterlab
+notebook
+pandas
+numpy
+holidays
+import-ipynb
+xgboost
+scikit-learn
+plotly
