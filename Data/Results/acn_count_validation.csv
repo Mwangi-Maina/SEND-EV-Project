@@ -1,0 +1,4 @@
+site,raw_sessions,cleaned_sessions,optimisation_ready_sessions,removed_by_cleaning,removed_for_optimisation
+caltech,10617,10594,9867,23,727
+jpl,17411,17409,16494,2,915
+office001,922,921,767,1,154

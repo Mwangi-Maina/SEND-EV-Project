@@ -1,0 +1,4 @@
+site,file,exists,rows,missing_required_columns,arrival_parse_share,departure_parse_share,energy_numeric_share,usable
+caltech,caltech_2019_sessions.csv,True,10617,,1.0,1.0,1.0,True
+jpl,jpl_2019_sessions.csv,True,17411,,1.0,1.0,1.0,True
+office001,office001_2019_sessions.csv,True,922,,1.0,1.0,1.0,True

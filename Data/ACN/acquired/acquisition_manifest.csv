@@ -1,0 +1,4 @@
+site,mode,site_complete,expected_chunks,completed_chunks,raw_sessions,duplicates_removed,raw_file,error,standardised_file,standardised_sessions,standardisation_action,source_rows,standardised_rows,arrival_parse_share,departure_parse_share,energy_numeric_share,arrival_source_column,departure_source_column,energy_source_column,derived_session_ids
+caltech,api,True,53,53,10617,0,caltech_2019_raw.jsonl,,caltech_2019_sessions.csv,10617,created,10617,10617,1.0,1.0,1.0,connectionTime,disconnectTime,kWhDelivered,0
+jpl,api,True,53,53,17411,0,jpl_2019_raw.jsonl,,jpl_2019_sessions.csv,17411,created,17411,17411,1.0,1.0,1.0,connectionTime,disconnectTime,kWhDelivered,0
+office001,api,True,12,12,922,0,office001_2019_raw.jsonl,,office001_2019_sessions.csv,922,created,922,922,1.0,1.0,1.0,connectionTime,disconnectTime,kWhDelivered,0
