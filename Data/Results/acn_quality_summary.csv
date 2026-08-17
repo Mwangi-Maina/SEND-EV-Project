@@ -1,0 +1,12 @@
+flag,rows
+duplicate_session,0
+missing_session_id,0
+missing_arrival,0
+missing_departure,0
+invalid_time_order,0
+invalid_delivered_energy,0
+invalid_required_energy,0
+invalid_power,0
+dwell_too_short,3
+dwell_too_long,23
+infeasible_under_assumed_power,1799

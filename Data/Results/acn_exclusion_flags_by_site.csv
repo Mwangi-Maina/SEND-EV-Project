@@ -1,0 +1,4 @@
+site,duplicate_session,missing_session_id,missing_arrival,missing_departure,invalid_time_order,invalid_delivered_energy,invalid_required_energy,invalid_power,dwell_too_short,dwell_too_long,infeasible_under_assumed_power
+caltech,0,0,0,0,0,0,0,0,2,21,729
+jpl,0,0,0,0,0,0,0,0,1,1,916
+office001,0,0,0,0,0,0,0,0,0,1,154

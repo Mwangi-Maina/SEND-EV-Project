@@ -1,0 +1,14 @@
+field,definition,origin
+session_id,Unique charging-session identifier.,acquisition/derived
+site,"ACN site: caltech, jpl or office001.",acquisition
+arrival_utc,Vehicle connection time represented in UTC.,parsed
+departure_utc,Vehicle disconnection time represented in UTC.,parsed
+arrival_local,Connection time converted to America/Los_Angeles.,derived
+energy_delivered_kwh,Historical energy delivered during the session.,acquisition
+energy_required_kwh,Energy target selected by ENERGY_REQUIREMENT_POLICY.,derived
+max_power_kw,Source charger power or explicit site-level assumption.,source/assumption
+dwell_hours,Time between connection and disconnection.,derived
+minimum_charge_hours,Required energy divided by assumed usable charging power.,derived
+flexibility_hours,Positive dwell time remaining after minimum charging time.,derived
+infeasible_under_assumed_power,Energy target exceeds assumed deliverable energy in the dwell window.,derived flag
+optimisation_ready,Valid and feasible under the configured assumptions.,derived flag
