@@ -1,0 +1,5 @@
+strategy,scenarios,service_rate,renewable_absorbed_kwh,residual_surplus_kwh,ev_grid_energy_kwh,unserved_energy_kwh,peak_ev_kw
+optimised_actual,24,1.0,584.14,12111.464,32.484,0.0,80.275
+fixed_delayed,24,0.981,159.46,12536.144,35.096,0.098,73.0
+immediate,24,1.0,136.035,12559.57,58.703,0.0,38.601
+rolling_actual,6,1.0,37.377,12603.593,15.877,0.0,15.4
