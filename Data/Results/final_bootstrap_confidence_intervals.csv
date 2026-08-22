@@ -1,0 +1,17 @@
+strategy,metric,mean,ci_lower,ci_upper
+fixed_delayed,renewable_absorption_change_kwh,23.42546296296294,15.544224537037028,33.112292824074046
+fixed_delayed,residual_surplus_reduction_kwh,23.42546296296329,15.544224537037692,33.11229282407376
+fixed_delayed,grid_energy_change_kwh,-23.60666666666666,-33.35786921296296,-15.666668981481482
+fixed_delayed,service_rate_change,-0.018567251461988305,-0.031469663742690064,-0.007328399122807037
+immediate,renewable_absorption_change_kwh,0.0,0.0,0.0
+immediate,residual_surplus_reduction_kwh,0.0,0.0,0.0
+immediate,grid_energy_change_kwh,0.0,0.0,0.0
+immediate,service_rate_change,0.0,0.0,0.0
+optimised_actual,renewable_absorption_change_kwh,448.1058022377065,320.27400946978935,588.7675245544422
+optimised_actual,residual_surplus_reduction_kwh,448.105802237707,320.2740094697906,588.7675245544425
+optimised_actual,grid_energy_change_kwh,-26.219213467578413,-37.44450297826342,-16.934564961873257
+optimised_actual,service_rate_change,0.0,0.0,0.0
+rolling_actual,renewable_absorption_change_kwh,5.822962962196808,2.3833333329502557,9.124055554387816
+rolling_actual,residual_surplus_reduction_kwh,5.82296296219738,2.383333332950315,9.124055554388452
+rolling_actual,grid_energy_change_kwh,-5.822962962221891,-9.124055554424501,-2.3833333329627964
+rolling_actual,service_rate_change,0.0,0.0,0.0
