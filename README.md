@@ -230,8 +230,8 @@ Some notebooks use capped scenario subsets for quick development. Check for `MAX
 
 ```text
 Notebooks/Charging_Baselines.ipynb
-Notebooks/14_EV_Charging_Optimisation.ipynb
-Notebooks/15_Rolling_Horizon_Control.ipynb
+Notebooks/EV_Charging_Optimisation.ipynb
+Notebooks/Rolling_Horizon_Control.ipynb
 ```
 
 Use a small cap for testing. Set `MAX_SCENARIOS = None` only for full experiments.
