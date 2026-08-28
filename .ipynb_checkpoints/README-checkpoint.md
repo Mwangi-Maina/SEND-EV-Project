@@ -95,15 +95,15 @@ Run the notebooks from the project root. This order rebuilds the whole project.
 | 7 | `Notebooks/Analysis_Solar.ipynb` | Analyse and model solar generation. | Solar model outputs and checks |
 | 8 | `Notebooks/Analysis_Consumption.ipynb` | Analyse and model campus consumption. | Consumption model outputs and checks |
 | 9 | `Notebooks/Renewable_Surplus.ipynb` | Build the renewable-surplus target and events. | `daily_surplus_summary.csv`, `surplus_events.csv` |
-| 10 | `Notebooks/ACN_Data_Acquisition.ipynb` | Acquire or validate ACN workplace charging data. | ACN raw and standardised files |
-| 11 | `Notebooks/ACN_Data_Cleaning_and_Flexibility.ipynb` | Describe raw behaviour, clean ACN sessions and estimate flexibility. | ACN quality, exclusion and site statistics |
+| 10 | `Notebooks/11A_ACN_Data_Acquisition.ipynb` | Acquire or validate ACN workplace charging data. | ACN raw and standardised files |
+| 11 | `Notebooks/11B_ACN_Data_Cleaning_and_Flexibility.ipynb` | Describe raw behaviour, clean ACN sessions and estimate flexibility. | ACN quality, exclusion and site statistics |
 | 12 | `Notebooks/EV_Scenario_Generation.ipynb` | Create synthetic Keele EV charging scenarios. | `keele_ev_scenarios.parquet`, `scenario_summary.csv` |
 | 13 | `Notebooks/Charging_Baselines.ipynb` | Build immediate and fixed-delay charging baselines. | `baseline_metrics.csv`, baseline schedules |
-| 14 | `Notebooks/EV_Charging_Optimisation.ipynb` | Optimise EV charging against actual and forecast surplus. | `optimisation_metrics.csv`, optimised schedules |
-| 15 | `Notebooks/Rolling_Horizon_Control.ipynb` | Test repeated short-horizon charging control. | `rolling_horizon_metrics.csv`, rolling schedules |
-| 16 | `Notebooks/SHAP_Analysis.ipynb` | Explain the surplus forecast with SHAP or model contributions. | `shap_feature_importance.csv`, SHAP figures |
-| 17 | `Notebooks/Counterfactual_Explanations.ipynb` | Turn schedule differences into vehicle-level explanations. | `counterfactual_recommendations.csv`, `counterfactual_metrics.csv` |
-| 18 | `Notebooks/Final_Evaluation.ipynb` | Combine all metrics into final tables and plots. | final strategy, bootstrap and sensitivity outputs |
+| 14 | `Notebooks/14_EV_Charging_Optimisation.ipynb` | Optimise EV charging against actual and forecast surplus. | `optimisation_metrics.csv`, optimised schedules |
+| 15 | `Notebooks/15_Rolling_Horizon_Control.ipynb` | Test repeated short-horizon charging control. | `rolling_horizon_metrics.csv`, rolling schedules |
+| 16 | `Notebooks/16_SHAP_Analysis.ipynb` | Explain the surplus forecast with SHAP or model contributions. | `shap_feature_importance.csv`, SHAP figures |
+| 17 | `Notebooks/17_Counterfactual_Explanations.ipynb` | Turn schedule differences into vehicle-level explanations. | `counterfactual_recommendations.csv`, `counterfactual_metrics.csv` |
+| 18 | `Notebooks/18_Final_Evaluation.ipynb` | Combine all metrics into final tables and plots. | final strategy, bootstrap and sensitivity outputs |
 | 19 | `Notebooks/Project_Summary.ipynb` | Summarise the full reproducible workflow. | Project-level overview |
 
 ## Workflow Summary
@@ -139,7 +139,7 @@ Models/Forecasting/xgb_surplus.joblib
 
 ### 4. EV Data and Flexibility
 
-`ACN_Data_Acquisition.ipynb` gets the ACN data. `ACN_Data_Cleaning_and_Flexibility.ipynb` first describes the raw data behaviour before cleaning, then validates sessions and estimates flexibility from dwell time, required energy and charger power.
+`11A_ACN_Data_Acquisition.ipynb` gets the ACN data. `11B_ACN_Data_Cleaning_and_Flexibility.ipynb` first describes the raw data behaviour before cleaning, then validates sessions and estimates flexibility from dwell time, required energy and charger power.
 
 Key outputs:
 
@@ -166,7 +166,7 @@ Data/Results/scenario_summary.csv
 
 ### 6. Baselines and Optimisation
 
-`Charging_Baselines.ipynb` builds simple comparison strategies. `EV_Charging_Optimisation.ipynb` uses constrained optimisation to move charging into surplus windows while preserving driver service. `15_Rolling_Horizon_Control.ipynb` tests a more operational control approach where schedules are repeatedly updated.
+`Charging_Baselines.ipynb` builds simple comparison strategies. `14_EV_Charging_Optimisation.ipynb` uses constrained optimisation to move charging into surplus windows while preserving driver service. `15_Rolling_Horizon_Control.ipynb` tests a more operational control approach where schedules are repeatedly updated.
 
 Key outputs:
 
@@ -181,7 +181,7 @@ Figures/optimised_charging_profile.png
 
 ### 7. Explainability
 
-`SHAP_Analysis.ipynb` explains the surplus forecast. `Counterfactual_Explanations.ipynb` explains charging changes by comparing factual and counterfactual schedules.
+`16_SHAP_Analysis.ipynb` explains the surplus forecast. `17_Counterfactual_Explanations.ipynb` explains charging changes by comparing factual and counterfactual schedules.
 
 Key outputs:
 
@@ -196,7 +196,7 @@ Figures/shap_waterfall_high_surplus.png
 
 ### 8. Final Evaluation and Dissertation
 
-`Final_Evaluation.ipynb` combines the forecasting, charging and explanation results. `Project_Summary.ipynb` gives a notebook-level overview of the whole project. The dissertation Word document is generated from the scripts in `Scripts/`.
+`18_Final_Evaluation.ipynb` combines the forecasting, charging and explanation results. `Project_Summary.ipynb` gives a notebook-level overview of the whole project. The dissertation Word document is generated from the scripts in `Scripts/`.
 
 Key outputs:
 
